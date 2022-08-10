@@ -1,0 +1,77 @@
+h1{
+    text-align: text;
+    color: blue;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#div1{
+    height: 200px;
+    width: 200px;
+    background-color: #000;
+    margin: 0 auto;
+    margin-top: 200px;
+    transition: 3s;
+}
+
+#div1:hover{
+transform: scale(5) rotate(360deg);
+}
+img{
+    width: 300px;
+    height:auto;
+    border: 5px solid black;
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius:50% ;
+    /*===Animation Making====*/
+    animation-name: img-num;
+    animation-duration:2s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/* img:hover{
+    animation-name:img-num;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+} */
+
+/* @keyframes img-num {
+    0% {
+    border-color: orange;
+  }
+  25%{
+    background-color: brown;
+  }
+  50%{
+    background-color: blue;
+  }
+  75%{
+    background-color: red;
+  }
+   100%{
+    border-color: aquamarine;
+}
+
+} */
+
+@keyframes img-num {
+    0%{
+      top: 0;
+      left: 0;  
+    }
+    50%{
+        top: 100px;
+        left: 0;
+        opacity: 0.5%;
+    }
+    100%{
+        top:0;
+        left: 0;
+    }
+    
+}
